@@ -1,0 +1,12 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+class "Стекольщик" as P {
+ Монтажные инструменты
+Установить в оконный проем(Стеклопакет, До въезда жителей) -> Застекленное окно
+}
+hide circle
+@enduml
