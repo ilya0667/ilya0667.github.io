@@ -1,0 +1,12 @@
+@startuml
+actor "Менеджер" as owner
+boundary "Система управления фирмой" as app
+entity "База данных" as data
+actor "Стекольщик" as trainee
+owner-> app : Заказ клиента
+app-> data : Добавление заказа
+data-> app : Чтение
+owner-> app : Пожелания
+app-> data : Установленный план
+data-> trainee: Указание работ
+@enduml
